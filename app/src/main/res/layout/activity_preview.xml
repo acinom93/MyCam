@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".PreviewActivity">
+
+    <View
+        android:id="@+id/divider2"
+        android:layout_width="match_parent"
+        android:layout_height="3dp"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/imgPreviewView"
+        android:background="?android:attr/listDivider" />
+
+    <ImageView
+        android:id="@+id/imgPreviewView"
+        android:layout_width="382dp"
+        android:layout_height="517dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        tools:layout_editor_absoluteX="1dp"
+        tools:layout_editor_absoluteY="0dp" />
+
+    <Button
+        android:id="@+id/bnwButton"
+        android:layout_width="70dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_toEndOf="@+id/quitButton"
+        android:backgroundTint="@color/colorAccent"
+        android:fontFamily="cursive"
+        android:onClick="bnwClick"
+        android:text="BnW"
+        android:textColor="@android:color/background_light"
+        android:textSize="14sp"
+        android:textStyle="bold" />
+
+
+    <Button
+        android:id="@+id/quitButton"
+        android:layout_width="69dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        android:backgroundTint="@color/colorAccent"
+        android:fontFamily="cursive"
+        android:onClick="quitActivityPreview"
+        android:text="BACK"
+        android:textColor="@android:color/background_light"
+        android:textSize="14sp"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/rotateButton"
+        android:layout_width="77dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_toEndOf="@+id/bnwButton"
+        android:backgroundTint="@color/colorAccent"
+        android:fontFamily="cursive"
+        android:onClick="rotateClick"
+        android:paddingLeft="4dp"
+        android:paddingRight="4dp"
+        android:text="Rotate"
+        android:textColor="@android:color/background_light"
+        android:textSize="14sp"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/undoButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_toEndOf="@+id/saveButton"
+        android:backgroundTint="@color/colorAccent"
+        android:fontFamily="cursive"
+        android:onClick="undoClick"
+        android:text="Undo"
+        android:textColor="@android:color/background_light"
+        android:textSize="14sp"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/saveButton"
+        android:layout_width="73dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_toEndOf="@+id/rotateButton"
+        android:backgroundTint="@color/colorAccent"
+        android:fontFamily="cursive"
+        android:onClick="saveNewImage"
+        android:text="Save"
+        android:textColor="@android:color/background_light"
+        android:textSize="14sp"
+        android:textStyle="bold" />
+
+
+</RelativeLayout>
